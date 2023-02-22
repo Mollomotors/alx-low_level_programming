@@ -1,5 +1,5 @@
-#ifndef _main_
-#define _main_
+#ifndef _main_H
+#define _main_H
 
 /**
  * _putchar - writes the character c to stdout
