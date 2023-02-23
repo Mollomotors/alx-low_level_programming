@@ -1,0 +1,1 @@
+-ethis file contains my practice of loops in c language
