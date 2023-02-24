@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print 0 to 9, skip 2 and 4
+ * print_numbers - prints 0123456789\n
+ *
+ * Return: void
  */
 
-void print_most_numbers(void)
-{
-	char i;
 
-	for (i = '0'; i <= '9'; i++)
+void print_numbers(void)
+{
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (i != '2' && i != '4')
-			_putchar(i);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
