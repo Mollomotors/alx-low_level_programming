@@ -1,16 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
-int main(void)
-{
-	char *str;
 
-	str = "0123456789";
-	puts2(str);
-	return (0);
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+
+	return (len);
+}
+
+/**
+ * puts2 - prints every second character of a string, followed by a new line
+ * @str: string to print
+ */
+
+void puts2(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0' && i < _strlen(str); i += 2)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
