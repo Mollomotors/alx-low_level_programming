@@ -1,5 +1,5 @@
-#ifndef main
-#define main
+#ifndef list
+#define list
 /**
  * struct listint_s - singly linked list
  * @n: integer
